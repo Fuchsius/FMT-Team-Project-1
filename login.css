@@ -116,7 +116,7 @@ p {
 .logo img {
     width: 153px;
     height:38px;
-    margin-left: 135px; /* Adjust the size as needed */
+    margin-left: 30px; /* Adjust the size as needed */
 }
 
 /* Menu Items */
@@ -124,6 +124,7 @@ p {
     display: flex;
     align-items: center;
     gap: 25px;
+    margin-left: 20px;
 }
 
 /* Menu Item */
@@ -151,7 +152,7 @@ p {
 }
 
 .search-img {
-    margin-left: 300px;
+    margin-left: 400px;
     width: 500px;  /* Adjust as needed */
     height: 50px;
 }
