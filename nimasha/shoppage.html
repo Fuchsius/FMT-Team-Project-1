@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="shoppage.css">
+</head>
+<body>
+
+    <header>
+        <h1>Shop Page</h1>
+        <p>Home > Shop Page</p>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <div class="filter">
+                <h3>Categories</h3>
+                <ul>
+                    <li><input type="checkbox"> Art & Design (8)</li>
+                    <li><input type="checkbox"> Business (12)</li>
+                    <li><input type="checkbox"> Data Science (7)</li>
+                    <li><input type="checkbox"> Development (10)</li>
+                    <li><input type="checkbox"> Finance (8)</li>
+                    <li><input type="checkbox"> Health & Fitness (6)</li>
+                    <li><a href="#">Show More »</a></li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h3>Language</h3>
+                <ul>
+                    <li><input type="checkbox"> All Language</li>
+                    <li><input type="checkbox"> Arabic (11)</li>
+                    <li><input type="checkbox"> English (53)</li>
+                    <li><input type="checkbox"> Spanish (22)</li>
+                    <li><a href="#">Show More »</a></li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h3>Price</h3>
+                <ul>
+                    <li><input type="radio" name="price"> All Price</li>
+                    <li><input type="radio" name="price"> Free</li>
+                    <li><input type="radio" name="price"> Paid</li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <h3>Ratings</h3>
+                <ul>
+                    <li>⭐⭐⭐⭐⭐ (42)</li>
+                    <li>⭐⭐⭐⭐ (23)</li>
+                    <li>⭐⭐⭐ (11)</li>
+                    <li>⭐⭐ (7)</li>
+                    <li>⭐ (3)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="shop">
+            <div class="shop-header">
+                <p>Showing 1-9 of 16 Results</p>
+                <select>
+                    <option>Default Sorting</option>
+                </select>
+            </div>
+
+            <div class="product-grid">
+                <div class="product">
+                    <span class="badge sale">SALE</span>
+                    <img src="image01.jpeg" alt="Garden Adeline Life">
+                    <h4>Garden Adeline Life</h4>
+                    <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                    <p class="price">$13.00 <del>$19.00</del></p>
+                </div>
+
+                <div class="product">
+                    <img src="image02.jpeg" alt="Time to Explore">
+                    <h4>Time to Explore</h4>
+                    <p>⭐⭐⭐⭐ (4.5)</p>
+                    <p class="price">$19.00</p>
+                </div>
+
+                <div class="product">
+                    <span class="badge sale">SALE</span>
+                    <img src="image03.jpeg" alt="Wildlife Adventure">
+                    <h4>Wildlife Adventure</h4>
+                    <p>⭐⭐⭐⭐ (4.3)</p>
+                    <p class="price">$29.00 <del>$39.00</del></p>
+                </div>
+
+                <div class="product">
+                    <span class="badge hot">HOT!</span>
+                    <img src="image04.jpeg" alt="Ketut Susilo Sky">
+                    <h4>Ketut Susilo Sky</h4>
+                    <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                    <p class="price">$16.00</p>
+                </div>
+
+                <div class="product">
+                    <span class="badge sale">SALE</span>
+                    <img src="image05.jpeg" alt="The Illusion Design">
+                    <h4>The Illusion Design</h4>
+                    <p>⭐⭐⭐⭐ (4.8)</p>
+                    <p class="price">$29.00 <del>$39.00</del></p>
+                </div>
+
+                <div class="product">
+                    <img src="image06.jpeg" alt="Fashion Edits">
+                    <h4>Fashion Edits</h4>
+                    <p>⭐⭐⭐⭐ (4.2)</p>
+                    <p class="price">$39.00</p>
+                </div>
+
+                <div class="product">
+                    <span class="badge sale">SALE</span>
+                    <img src="image07.jpeg" alt="The Business Women">
+                    <h4>The Business Women</h4>
+                    <p>⭐⭐⭐⭐ (4.5)</p>
+                    <p class="price">$19.00 <del>$32.00</del></p>
+                </div>
+
+                <div class="product">
+                    <img src="image8.jpeg" alt="Online Makeup Tutorial">
+                    <h4>Online Makeup Tutorial</h4>
+                    <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                    <p class="price">$49.00</p>
+                </div>
+
+                <div class="product">
+                    <img src="image9.jpeg" alt="The Bad Feelings">
+                    <h4>The Bad Feelings</h4>
+                    <p>⭐⭐⭐⭐ (4.8)</p>
+                    <p class="price">$49.00 <del>$60.00</del></p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <span class="page active">1</span>
+                <span class="page">2</span>
+                <span class="page">3</span>
+                <span class="page">4</span>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>SkillGro</h2>
+                <p>Grow Your Skills</p>
+                <p>463 7th Ave, NY 10018, USA</p>
+                <p>+123 88 9900 456</p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Our values</a></li>
+                    <li><a href="#">Our advisory board</a></li>
+                    <li><a href="#">Our partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Our Company</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Become a Teacher</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Get In Touch</h3>
+                <p>Follow us on:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="app-links">
+                    <img src="images/google-play.png" alt="Google Play">
+                    <img src="images/apple-store.png" alt="Apple Store">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2010-2024 skillgro.com. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

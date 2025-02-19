@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: left;
+    padding: 20px;
+    background-color:black;
+
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    color: black;
+}
+
+.sidebar {
+    width: 20%;
+    background-color:white;
+    padding: 15px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter h3 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.filter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filter li {
+    margin: 5px 0;
+}
+
+.shop {
+    width: 80%;
+    padding: 20px;
+    color: white;
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    color:black;
+}
+/* Fix product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+product-title {
+    
+    color:black;
+}
+
+
+/* Fix product width */
+.product {
+    background-color:black;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    width: 150px; /* Remove fixed width */
+    height:150px; /* Keep height fixed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ensure sidebar and shop fit */
+.container {
+    display: flex;
+    align-items: flex-start; /* Align sidebar and shop */
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+}
+
+.shop {
+    flex: 3; /* Takes more space */
+    padding: 20px;
+}
+
+
+
+
+.product {
+    background-color:white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    column-gap: 5px;
+}
+.product img {
+    width: 150px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fit without distortion */
+    border-radius: 6px; /* Adds rounded corners */
+}
+
+/* Background images for products */
+.product:nth-child(1) {
+    background-image: url('images/book1.jpg');
+}
+
+.product:nth-child(2) {
+    background-image: url('images/book2.jpg');
+}
+
+.product:nth-child(3) {
+    background-image: url('images/book3.jpg');
+}
+
+.product:nth-child(4) {
+    background-image: url('images/book4.jpg');
+}
+
+.product:nth-child(5) {
+    background-image: url('images/book5.jpg');
+}
+
+.product:nth-child(6) {
+    background-image: url('images/book6.jpg');
+}
+
+.product:nth-child(7) {
+    background-image: url('images/book7.jpg');
+}
+
+.product:nth-child(8) {
+    background-image: url('images/book8.jpg');
+}
+
+.product:nth-child(9) {
+    background-image: url('images/book9.jpg');
+}
+
+/* Adjusting background properties */
+.product {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.price del {
+    color:black;
+}
+
+/* Badges */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color:black;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.sale {
+    background: blue;
+}
+
+.hot {
+    background: orange;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page {
+    display: inline-block;
+    padding: 10px;
+    background:black;
+    margin: 5px;
+    cursor: pointer;
+}
+/* Footer */
+.footer {
+    background: #0a0a23;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    max-width: 250px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    border-bottom: 2px solid #5533ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social .social-icons img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.app-links img {
+    width: 120px;
+    margin: 10px 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom a {
+    color: #ffcc00;
+    text-decoration: none;
+}
