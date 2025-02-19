@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Course Project</title>
-    <link rel="stylesheet" href="../css/home-page-02-style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="logo">Logo</a>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Course Project</title>
+  <link rel="stylesheet" href="../css/home-page-02-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/logo.png" alt="SkillGro Logo">
+     
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses <i class="fas fa-chevron-down"></i></a></li>
+      <li><a href="#">Pages <i class="fas fa-chevron-down"></i></a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="right-section">
+      <div class="search-container">
+        <select class="categories">
+          <option>Categories</option>
+        </select>
+        <input type="text" placeholder="Search For Course . . .">
+        <button class="search-icon"><i class="fas fa-search"></i></button>
       </div>
-    </nav>
 
-    <main>
-      <section>
-        <h2>Course List</h2>
-        <!-- Course content will go here -->
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Online Course Project. All rights reserved.</p>
-    </footer>
-  </body>
+      <div class="cart-container">
+        <i class="fas fa-shopping-cart"></i>
+        <span>$00.0</span>
+      </div>
 
-  <script src="../js/home-page-02.js"></script>
+      <button class="get-started">Get Started</button>
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Course List</h2>
+      <!-- Course content will go here -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Online Course Project. All rights reserved.</p>
+  </footer>
+</body>
+
+<script src="../js/home-page-02.js"></script>
+
+
 </html>
