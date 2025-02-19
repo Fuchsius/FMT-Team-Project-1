@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Top Bar</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Signup</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -86,44 +86,57 @@
  <div class="custom-container">
     <img src="assests/planet.png" alt="planet Icon" class="planet-icon">
     <div class="text-content">
-        <h1>Student Login</h1>
+        <h1>Student SignUp</h1>
         <p>Home > <span class="blue-text">Login</span></p>
     </div>
     <img src="assests/line.png" alt="Line" class="line-icon">
 </div>
-
-<div class="login-container">
-    <h1>Welcome back!</h1>
-    <p class="subtext">Hey there! Ready to log in? Just enter your username and password below and you'll be back in action in no time. Let's go!</p>
+<br><br>
+    
+<div class="container">
+    <h2>Create Your Account</h2>
+    <p>Hey there! Ready to join the party? We just need a few details from you to get started. Let's do this!</p><br>
     
     <button class="google-btn">
-        <img src="assests/google.png" alt="Google Icon">
+        <img src="assests/google.png" alt="Google Logo">
         Continue with Google
     </button>
-    
-    <div class="divider">
-        <span></span>or<span></span>
+
+    <div class="separator">
+        <span>or</span>
     </div>
 
     <form>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Email">
-        
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password">
-        
-        <div class="options">
-            <div class="remember-me">
-                <input type="checkbox" id="remember">
-                <label for="remember">Remember me</label>
+        <div class="input-group">
+            <div class="input-field">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First Name">
             </div>
-            <a href="#" class="forgot-password">Forgot Password?</a>
+            <div class="input-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last Name">
+            </div>
         </div>
 
-        <button class="sign-in-btn">Sign In <span>→</span></button>
+        <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email">
+        </div>
+
+        <div class="input-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <div class="input-field">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm Password">
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up →</button>
     </form>
 
-    <p class="sign-up">Don't have an account? <a href="#">Sign Up</a></p>
+    <p class="login-text">Already have an account? <a href="#">Login</a></p>
 </div>
 <br><br>
 
@@ -189,9 +202,5 @@
 </footer>
 
 
-    
-</div>
-       
-    
 </body>
 </html>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
     margin: 0;
@@ -12,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    height:46.5px;
 }
 
 /* Content container */
@@ -116,7 +118,7 @@ p {
 .logo img {
     width: 153px;
     height:38px;
-    margin-left: 40px; /* Adjust the size as needed */
+    margin-left: 20px;
 }
 
 /* Menu Items */
@@ -235,149 +237,121 @@ p {
     margin-left: 1100px;
 }
 
-
-/* Login Container */
-.login-container {
+.container {
     background:#E1E1E1;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    height:530px;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-left: 690px;
+    width: 500px;
+    height:580px;
+
+    margin-left: 750px;
     margin-top: 100px;
-    
 }
 
-/* Heading */
-h1 {
-    font-size: 24px;
-    color: #1F1F1F;
-    margin-bottom: 10px;
+.container p{
+    color:#6D6C80;
 }
 
-/* Subtext */
-.subtext {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: left;
+h2 {
+    font-weight: 600;
+    color: #252525;
 }
 
-/* Google Button */
 .google-btn {
     width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 8px;
+    gap: 10px;
+    font-weight: 500;
 }
 
 .google-btn img {
-    width: 18px;
-    margin-right: 8px;
+    width: 20px;
+    height: 20px;
 }
 
-/* Divider */
-.divider {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    font-size: 14px;
-    color: #999;
-}
-
-.divider span {
-    flex: 1;
-    height: 1px;
-    background: #ddd;
-    margin: 0 10px;
-}
-
-/* Form */
-form {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-label {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-input {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-/* Options */
-.options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-}
-
-.remember-me input {
-    margin-right: 5px;
-}
-
-.forgot-password {
-    color: #6A5ACD;
-    text-decoration: none;
-}
-
-/* Sign In Button */
-.sign-in-btn {
-    background: #FFC107;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+.separator {
+    margin: 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    text-shadow: #000;
-}
-
-.sign-in-btn span {
-    margin-left: 5px;
-}
-
-/* Sign Up Link */
-.sign-up {
+    color:black;
     font-size: 14px;
-    margin-top: 20px;
-    color: #555;
 }
 
-.sign-up a {
-    color: #6A5ACD;
-    text-decoration: none;
+.separator span {
+    background:#E1E1E1 ;
+    padding: 0 10px;
 }
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-field label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-btn {
+    width: 100%;
+    background: #ffcc4d;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #ffb800;
+}
+
+.login-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #161439;
+}
+
+.login-text a {
+    color: #5751E1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
 
 
 footer {
@@ -507,134 +481,220 @@ footer {
     color: #4A90E2;
 }
 
-
-
-/* --- RESPONSIVE DESIGN --- */
-
-/* Medium Screens (Tablets) */
-@media (max-width: 1024px) {
+/* Mobile Devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .top-container {
+        padding: 10px;
+        height: auto;
+    }
+    
     .content {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding: 10px;
     }
+
     .left-content, .right-content {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .search-icon {
-        margin-left: 0;
-        margin-top: 10px;  /* Adds space when stacked vertically */
-
-    }
-    .heart-img, .cart-img {
-        width: 35px;  /* Adjust size for medium screens */
-        height: 35px;
-    }
-    .login-btn {
-        width: 85px;       /* Reduce button size */
-        height: 38px;
-    }
-    .custom-container {
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        padding: 15px;
-    }
-
-    .planet-icon {
-        width: 60px; /* Slightly smaller */
-        height: auto;
-        margin-left: 20px;
-    }
-
-    .text-content h1 {
-        font-size: 32px;
-    }
-
-    .text-content p {
-        font-size: 0.85rem;
-    }
-
-  
-}
-
-/* Small Screens (Mobile Phones) */
-@media (max-width: 768px) {
-    .top-container {
-        padding: 5px 10px;
-    }
-    .left-content, .right-content {
-        gap:5px;
-    }
-    .contact-item {
-        flex-direction: column;
-        text-align: center;
-    }
-    .follow-section {
-        flex-direction: column;
-    }
-    .social-icons {
+        margin: 0;
         justify-content: center;
+        text-align: center;
     }
+    
+    .logo img {
+        width: 130px;
+        height: auto;
+    }
+
     .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .navbar {
         flex-direction: column;
         gap: 15px;
     }
-    .search-icon {
-        margin-top: 10px;
-        margin-left: 0;
+
+    .search-img {
+        width: 100%;
+        height: auto;
     }
 
     .heart-img, .cart-img {
-        width: 30px;  /* Adjust size for smaller screens */
+        width: 30px;
         height: 30px;
-   
-   
-}
-.login-btn {
-    width: 85px;  /* Reduce button size */
-    height: 38px;
-    margin-left: 0; /* No space on the left */
-    margin-top: 10px; /* Adds space above the button */
-}
-.custom-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    gap: 10px;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .custom-container {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .social-icons1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+    }
 }
 
-.planet-icon {
-    width: 50px;
-    height: auto;
-    margin: 0 auto;
+/* Tablets (min-width: 601px and max-width: 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .top-container {
+        padding: 10px 20px;
+    }
+    
+    .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-content, .right-content {
+        gap: 15px;
+        margin: 0;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .search-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .heart-img, .cart-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .login-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .custom-container {
+        padding: 25px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 15px;
+    }
+
+    .app-buttons {
+        gap: 15px;
+    }
 }
 
-.text-content {
-    align-items: center;
+/* Larger Screens (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+    .top-container {
+        padding: 10px 20px;
+    }
+
+    .content {
+        justify-content: space-between;
+    }
+
+    .left-content, .right-content {
+        margin: 0;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 153px;
+    }
+
+    .menu {
+        gap: 25px;
+    }
+
+    .search-img {
+        width: 500px;
+        height: 50px;
+    }
+
+    .heart-img, .cart-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .login-btn {
+        width: 97.78px;
+    }
+
+    .custom-container {
+        width: 100%;
+        height: 300px;
+    }
+
+    .container {
+        width: 500px;
+        margin-left: 750px;
+        margin-top: 100px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+
+    .app-buttons {
+        gap: 10px;
+    }
 }
 
-.text-content h1 {
-    font-size: 28px;
-}
 
-.text-content p {
-    font-size: 0.8rem;
-}
 
-.login-container {
-    padding: 30px;
-    width: 90%;
-    margin: auto;
-}
-}
