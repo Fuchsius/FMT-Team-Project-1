@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.top-container {
+    
+    background-color: #161439;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Content container */
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Makes items wrap on smaller screens */
+}
+
+/* Left and Right Content */
+.left-content, .right-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-content{
+    margin-left: 100px;
+}
+.right-content{
+    margin-right: 200px;
+}
+/* Individual contact item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icons */
+.icon, .icon1 {
+    width: 20px;
+    height: auto;
+}
+
+/* Phone icon */
+.icon1 {
+    width: 20px;
+    height: 20px;
+    opacity: 60%;
+}
+
+/* Paragraph styling */
+p {
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.5px;
+}
+
+/* Follow section */
+.follow-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Social media icons container */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Social media icons */
+.social-icon1{
+    width:11.07px;
+    height:14px
+}
+
+.social-icon2{
+    width:16.39px;
+    height:14PX;
+}
+
+.social-icon3{
+    width:14.62px;
+    height:14px;
+}
+.social-icon4{
+    width:14.62px;
+    height:14px;
+}
+.social-icon5{
+    width:16.13px;
+    height:14px;
+}
+/* --- NAVIGATION BAR --- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #fff;
+    margin-right: 1200px;
+    
+}
+
+/* Logo */
+.logo img {
+    width: 153px;
+    height:38px;
+    margin-left: 135px; /* Adjust the size as needed */
+}
+
+/* Menu Items */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Menu Item */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Menu Text */
+.menu-item p {
+    color: #161439;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* Menu Arrows */
+.menu-item img {
+    width: 12px;
+    height: auto;
+}
+.search-icon {
+    margin-left: 20px;  /* Adds some space between menu items and search icon */
+}
+
+.search-img {
+    margin-left: 300px;
+    width: 500px;  /* Adjust as needed */
+    height: 50px;
+}
+
+.heart-img {
+    width: 40px;  /* Adjust the size of the heart icon */
+    height: 40px; /* Adjust the size of the heart icon */
+    margin-left: 20px; /* Adds space between the search icon and heart icon */
+}
+.cart-img{
+    width:40px;
+    height:40px;
+    margin-left: 10px;
+}
+
+.login-btn {
+    background-color: #ffc224;
+    width: 97.78px !important;   /* Ensure the width is enforced */
+    height: 44px;
+    border: none;
+    border-radius: 50px;  /* Rounded button */
+    font-size: 16px;
+    color: #161439;  /* Dark text color for contrast */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    flex: 0 0 auto;  /* Prevent the button from shrinking or growing */
+}
+.custom-container {
+    width: 100%;
+    height: 300px; /* Adjust height if needed */
+    background: rgb(231,230,237);
+    background: linear-gradient(90deg, rgba(231,230,237,1) 0%, rgba(225,221,231,1) 19%, rgba(205,200,224,1) 28%, rgba(196,192,222,1) 47%, rgba(216,209,221,1) 65%, rgba(213,205,228,1) 73%, rgba(230,223,233,1) 100%); /* Light purple color */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: #333; /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto; /* Centers the container */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.planet-icon {
+    width: 68px;
+    height: 35px;
+    margin-right: 30px;
+    margin-bottom: 75px;
+    margin-left:30px; /* Adds spacing between icon and text */
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: center; 
+    
+}
+.text-content p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+    color: black;
+}
+
+.text-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.blue-text{
+    color:blue;
+}
+.line-icon {
+    width: 500px; /* Adjust width as needed */
+    height: auto;
+    margin-left: 1100px;
+}
+
+
+/* Login Container */
+.login-container {
+    background:#E1E1E1;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height:530px;
+    text-align: center;
+    margin-left: 690px;
+    margin-top: 100px;
+    
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    color: #1F1F1F;
+    margin-bottom: 10px;
+}
+
+/* Subtext */
+.subtext {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Google Button */
+.google-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.google-btn img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    color: #6A5ACD;
+    text-decoration: none;
+}
+
+/* Sign In Button */
+.sign-in-btn {
+    background: #FFC107;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    text-shadow: #000;
+}
+
+.sign-in-btn span {
+    margin-left: 5px;
+}
+
+/* Sign Up Link */
+.sign-up {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.sign-up a {
+    color: #6A5ACD;
+    text-decoration: none;
+}
+
+
+/* footer */
+.footer {
+    background: #0C0C28;
+    padding: 50px 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 156px;
+    height:38px;
+}
+
+h2 {
+    font-size: 22px;
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+    border-left: 3px solid #6A5ACD;
+    padding-left: 8px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #A0A0B2;
+    line-height: 1.6;
+}
+
+.footer-address,
+.footer-phone {
+    font-size: 14px;
+    color: #E1E1E1;
+    margin-top: 8px;
+}
+
+/* Links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    color: #A0A0B2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #6A5ACD;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    width:15px;
+    height:15px;
+}
+
+.social-icons img {
+    width: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* App Store Buttons */
+.app-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.app-buttons img {
+    width: 120px;
+    cursor: pointer;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: left;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-left:20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #A0A0B2;
+}
+
+.footer-links {
+    margin-top: 10px;
+    
+    text-align: right;
+}
+
+.footer-links a {
+    color: #A0A0B2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #6A5ACD;
+}
+
+.footer-links span {
+    margin: 0 5px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .left-content, .right-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-icon {
+        margin-left: 0;
+        margin-top: 10px;  /* Adds space when stacked vertically */
+
+    }
+    .heart-img, .cart-img {
+        width: 35px;  /* Adjust size for medium screens */
+        height: 35px;
+    }
+    .login-btn {
+        width: 85px;       /* Reduce button size */
+        height: 38px;
+    }
+    .custom-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .planet-icon {
+        width: 60px; /* Slightly smaller */
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 32px;
+    }
+
+    .text-content p {
+        font-size: 0.85rem;
+    }
+
+  
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+    .top-container {
+        padding: 5px 10px;
+    }
+    .left-content, .right-content {
+        gap:5px;
+    }
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .follow-section {
+        flex-direction: column;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .search-icon {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .heart-img, .cart-img {
+        width: 30px;  /* Adjust size for smaller screens */
+        height: 30px;
+   
+   
+}
+.login-btn {
+    width: 85px;  /* Reduce button size */
+    height: 38px;
+    margin-left: 0; /* No space on the left */
+    margin-top: 10px; /* Adds space above the button */
+}
+.custom-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.planet-icon {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.text-content {
+    align-items: center;
+}
+
+.text-content h1 {
+    font-size: 28px;
+}
+
+.text-content p {
+    font-size: 0.8rem;
+}
+
+.login-container {
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+}
+}
