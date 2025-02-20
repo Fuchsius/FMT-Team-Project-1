@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
+    <title>All Events</title>
+    <link rel="stylesheet" href="allevents.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -86,47 +87,88 @@
  <div class="custom-container">
     <img src="assests/planet.png" alt="planet Icon" class="planet-icon">
     <div class="text-content">
-        <h1>Student Login</h1>
-        <p>Home > <span class="blue-text">Login</span></p>
+        <h1>All Events</h1>
+        <p>Home > <span class="blue-text">Events</span></p>
     </div>
     <img src="assests/line.png" alt="Line" class="line-icon">
 </div>
-
-<div class="login-container">
-    <h1>Welcome back!</h1>
-    <p class="subtext">Hey there! Ready to log in? Just enter your username and password below and you'll be back in action in no time. Let's go!</p>
-    
-    <button class="google-btn">
-        <img src="assests/google.png" alt="Google Icon">
-        Continue with Google
-    </button>
-    
-    <div class="divider">
-        <span></span>or<span></span>
-    </div>
-
-    <form>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Email">
-        
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password">
-        
-        <div class="options">
-            <div class="remember-me">
-                <input type="checkbox" id="remember">
-                <label for="remember">Remember me</label>
-            </div>
-            <a href="#" class="forgot-password">Forgot Password?</a>
+<br><br>
+<div class="container">
+    <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="assests/student1.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>The Accessible Target Sizes Cheatsheet</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> United Kingdom</p>
         </div>
 
-        <button class="sign-in-btn">Sign In <span>→</span></button>
-    </form>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="assests/student2.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>Aewe Creating Futures Through Technology</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> Tokyo,Japn</p>
+        </div>
 
-    <p class="sign-up">Don't have an account? <a href="#">Sign Up</a></p>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="assests/student3.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>Exactly How Technology Can Make Reading</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> Colorado</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="assests/student4.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>Learning JavaScript With Imagination</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> Alexander city</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="assests/student5.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>Make Your Magnificent May 2023 Edition</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> Alaska</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="assests/student1.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>Accessible Target Sizes Cheatsheet</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> Estes Park</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="assests/student2.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>Color Mechanics That He Came Up With During</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> Walsenburg</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="assests/student6.png" alt="Image">
+            <span class="date">25 June, 2024</span>
+            <h3>How To Design Effective User Onboarding</h3>
+            <p><i class="fas fa-location-dot location-icon"></i> New York</p>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+    </div>
 </div>
 <br><br>
-
 <footer>
     <div class="footer-container">
         <div class="footer-section about">
@@ -189,9 +231,6 @@
 </footer>
 
 
-    
-</div>
-       
-    
+
 </body>
 </html>
