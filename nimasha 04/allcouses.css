@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #f3f3f3, #e0e0e0);
+    color: black;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    width: 25%;
+    height: 200%;
+    padding: 20px;
+    background:white;
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    color:black;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+    color: black;
+    font-size: 12px;
+}
+
+.sidebar a {
+    color: rgb(30, 30, 200);
+    text-decoration: none;
+}
+
+.course-container {
+    width: 75%;
+    padding: 20px;
+    right: auto;
+    align-items: center;
+    /* COURSE CONTAINER STYLES */
+.course-container {
+    width: 75%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* HEADER AREA (Showing Total Results + Sort By) */
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #f8f9fd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* "Showing Total Results" text */
+.course-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* SORT BY DROPDOWN CONTAINER */
+.sort-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Sort By Label */
+.sort-container label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #444;
+}
+
+/* Sort By Dropdown */
+.sort-container select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* GRID / LIST ICON BUTTONS */
+.view-icons {
+    display: flex;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+/* View Icons Styling */
+.view-icons button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.view-icons button:hover {
+    background: #f9b234;
+    border-color: #f9b234;
+    color: #fff;
+}
+/* ACTIVE GRID / LIST VIEW ICON */
+.view-icons button.active {
+    background: #f9b234;
+    color: #fff;
+}
+
+
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 5px;
+    background: #f9b234;
+    border: none;
+    color: black;
+}
+
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.course-card h4 {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.course-card p {
+    font-size: 14px;
+    color:black;
+}
+
+.course-card span {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color:black;
+}
+
+.course-card button {
+    background: #f9b234;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    background: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background: blue;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+
+    .course-container {
+        width: 100%;
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+    }
+}
+/* FOOTER STYLING */
+footer {
+    background: #0B0B33;
+    color: #fff;
+    padding: 50px 10%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-section h4::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #5C5CFF;
+    margin-top: 5px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f9b234;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f9b234;
+}
+
+/* APP DOWNLOAD BUTTONS */
+.app-buttons {
+    margin-top: 15px;
+}
+
+.app-buttons a img {
+    width: 140px;
+    margin-right: 10px;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #f9b234;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .footer-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
