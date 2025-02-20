@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header Section */
+.header {
+    background:white;
+    padding: 50px;
+    text-align: left;
+    color: #000;
+    max-width: 100%;
+    height: 100px;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color:blue;
+}
+
+.header-content span {
+    color: #5C5CFF;
+    font-weight: bold;
+}
+
+/* Instructors Section */
+.instructors {
+    padding: 50px 10%;
+    background: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Instructor Grid */
+.instructor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Instructor Card */
+.instructor-card {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.instructor-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Instructor Image */
+.instructor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #5C5CFF;
+    margin-bottom: 15px;
+    margin: 10px;
+    place-items: right;
+}
+
+/* Instructor Details */
+.instructor-card h3 {
+    font-size: 18px;
+    color: #5C5CFF;
+}
+
+.instructor-card .role {
+    font-size: 14px;
+    color: #5C5CFF;
+    margin: 5px 0;
+}
+
+.instructor-card .rating {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color:white;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s;
+    
+}
+
+.social-icons a:hover {
+    color: #f9b234;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .instructor-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .instructor-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instructor-card {
+        width: 80%;
+    }
+}
+/* FOOTER STYLING */
+footer {
+    background: #0B0B33;
+    color: #fff;
+    padding: 50px 10%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-section h4::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #5C5CFF;
+    margin-top: 5px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f9b234;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f9b234;
+}
+
+/* APP DOWNLOAD BUTTONS */
+.app-buttons {
+    margin-top: 15px;
+}
+
+.app-buttons a img {
+    width: 140px;
+    margin-right: 10px;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #f9b234;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .footer-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
