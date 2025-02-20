@@ -1,0 +1,479 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #f6f0ff, #d7c2ff);
+    padding: 20px;
+    text-align: center;
+    color: #222;
+    width: 1000px;
+    height: 100px;
+
+    
+    margin: 60px auto;
+}
+
+
+/* Center the Instructor Profile */
+.instructor-profile {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: auto;
+    margin-top: 20px; /* Adjust margin if needed */
+    max-width: 2000px;
+    width: 100%;
+    height: 200;
+    padding: 10px;
+    border-radius: 10px; 
+    max-width: 900px;
+    margin: 50px auto;
+    
+    }
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    background: rgb(16, 16, 74);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px; /* Adjust width */
+    width: 100%;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-image: url('images/profile.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Profile Info */
+.profile-info {
+    flex: 1; /* Allow text section to expand */
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+    color: #9b84ff;
+}
+
+.profile-info .role {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.profile-info .rating {
+    font-size: 14px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #9b84ff;
+}
+/* Quick Contact Box */
+.quick-contact {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 20%x;
+    width: 20%;
+    right: 20px;
+
+    left: 200px;
+}
+
+.quick-contact h3 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.quick-contact form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.quick-contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9b84ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.quick-contact button:hover {
+    background-color: #7a63d2;
+}
+
+
+
+/* Biography */
+.bio-section, .skills-section, .contact-section, .courses-section {
+    padding: 10px;
+}
+
+.bio-section h3, .skills-section h3, .contact-section h3, .courses-section h3 {
+    color: #9b84ff;
+}
+/* Biography Section */
+.bio-section {
+    background: #ffffff; /* White background */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 50%; /* Reduce width */
+    margin: 10px auto; /* Center align */
+    height: 180px;
+}
+
+.bio-section h3 {
+    color: #222; /* Darker heading color */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bio-section p {
+    font-size: 12px; /* Smaller text */
+    line-height: 1.5;
+    color: #666; /* Softer text color */
+}
+
+/* Skills */
+.skill {
+    margin-bottom: 5px;
+}
+/* Skills Section */
+.skills-section {
+    background: #ffffff; /* White background */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 50%; /* Reduce width */
+    margin: 20px auto; /* Center align */
+    height: 250px;
+}
+
+.skills-section h3 {
+    color: #222; /* Darker heading color */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Skill Item Layout */
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Skill Name */
+.skill-name {
+    font-weight: bold;
+    font-size: 12px;
+    color: #222;
+}
+
+/* Progress Bar Container */
+.progress-container {
+    width: 50%;
+    background: #eee;
+    border-radius: 5px;
+    height: 8px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 100%;
+    background: #FFC107; /* Yellow color */
+    border-radius: 5px;
+}
+
+/* Skill Percentage */
+.skill-percentage {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Skill Grid Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 Columns */
+    gap: 15px;
+}
+
+
+.progress {
+    width: 20%;
+    height: 8px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+}
+
+.php { width: 88%; background: #ff9800; }
+.java { width: 55%; background: #ff5733; }
+.react { width: 65%; background: #009688; }
+.angular { width: 40%; background: #9b84ff; }
+
+
+
+
+
+/* Contact Form */
+
+.contact-section form {
+    background:black;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+    height: 300px;
+    top: 500px;
+    left: 26px;
+    margin-left: auto;
+    text-overflow: clip;
+}
+
+.contact-section input {
+    display: block;
+    width: 50%;
+    height: 50px;
+    padding: 5px;
+    margin: 5px auto;
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.contact-section button {
+    background: #9b84ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* Courses */
+.courses-section {
+    text-align: left;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.courses-header {
+    text-align: center;
+    color: #6a00ff; /* Adjust color as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.courses-header p {
+    color: #bbb;
+    font-size: 12px;
+}
+
+.course-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: right;
+    background-size: cover;
+    background-position: center;
+    right: auto;
+max-width: 400px;
+}
+.course-list {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.course {
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border-width: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.course button {
+    background: #ff9800;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #0b0b36;
+    color: white;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-about, .footer-links, .footer-company, .footer-contact {
+    width: 22%;
+}
+
+.footer-about h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.footer-links h3, .footer-company h3, .footer-contact h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-links ul, .footer-company ul {
+    list-style: none;
+}
+
+.footer-links ul li, .footer-company ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a, .footer-company ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover, .footer-company ul li a:hover {
+    color: #f9b234;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f9b234;
+}
+
+.app-links {
+    margin-top: 15px;
+}
+
+.app-links img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background: #08082a;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #f9b234;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-company, .footer-contact {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
