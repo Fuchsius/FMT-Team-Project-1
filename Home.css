@@ -1694,7 +1694,7 @@ body{
   
   .footer-columns {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     margin-top: 10px;
  
   }
@@ -2112,12 +2112,7 @@ body{
       width: 100%;
       justify-content: space-between;
     }
-    .footer-description{font-size: 12px;}
-    .footer-content{
-      margin-left:0px;
-      padding:  0px 30px;
-
-    }
+  
     .login-button {
       width: 100%;
       text-align: center;
@@ -2189,7 +2184,7 @@ body{
     .phone-icon {
       width: 18px;
       height: 18px;
-    }.footer-description{font-size: 12px;}
+    }
   
     .phone {
       flex-direction: column;
@@ -2208,8 +2203,7 @@ body{
     .NL-section{height:500px;}
     .site-footer{
       margin-left:0px;
-      padding:  0px 30px;
-      font-size: 12px ;
+      padding:  0px30px;
 
     }
     .email-location {
@@ -2223,11 +2217,7 @@ body{
       align-items: center;
       gap: 20px;
     }
-    .site-footer{
-      
-      font-size: 12px ;
-
-    }
+  
     .social-links {
       flex-direction: column;
       gap: 8px;
@@ -2277,13 +2267,6 @@ body{
   
     
   }
-.answer p{
-  font-size: 12px;
-}
-.p{
-  font-size: 12px;
-}
-.footer-description{font-size: 12px;}
-    
+
   
   
