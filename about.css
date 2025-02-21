@@ -769,7 +769,7 @@
   
   .footer-columns {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     margin-top: 10px;
  
   }
