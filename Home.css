@@ -2209,6 +2209,7 @@ body{
     .site-footer{
       margin-left:0px;
       padding:  0px 30px;
+      font-size: 12px ;
 
     }
     .email-location {
@@ -2222,7 +2223,11 @@ body{
       align-items: center;
       gap: 20px;
     }
-  
+    .site-footer{
+      
+      font-size: 12px ;
+
+    }
     .social-links {
       flex-direction: column;
       gap: 8px;
