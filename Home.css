@@ -2112,7 +2112,7 @@ body{
       width: 100%;
       justify-content: space-between;
     }
-  
+    .footer-description{font-size: 12px;}
     .footer-content{
       margin-left:0px;
       padding:  0px 30px;
@@ -2189,7 +2189,7 @@ body{
     .phone-icon {
       width: 18px;
       height: 18px;
-    }
+    }.footer-description{font-size: 12px;}
   
     .phone {
       flex-direction: column;
@@ -2283,6 +2283,7 @@ body{
 .p{
   font-size: 12px;
 }
+.footer-description{font-size: 12px;}
     
   
   
