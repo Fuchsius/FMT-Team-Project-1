@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f13;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #ebe5fc, #f6f3fe);
+    text-align: left;
+    padding: 30px;
+}
+
+.header h1 {
+    color: #222;
+    font-size: 28px;
+}
+
+.header p {
+    color: #666;
+}
+
+.header span {
+    color: #6a50ee;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-right: 20px;
+    height: 200%;
+}
+
+.filter-box {
+    margin-bottom: 15px;
+}
+
+.filter-box h3 {
+    color: #6a50ee;
+    margin-bottom: 8px;
+    background-color: #ebe5fc;
+}
+
+.filter-box ul {
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+.filter-box li {
+    font-size: 14px;
+    color:black;
+    margin: 5px 0;
+}
+
+/* Courses Grid */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex-grow: 1;
+}
+
+/* Course Card */
+.course-card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 65%;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.course-card h4 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #0f0f13;
+}
+
+.course-card .price {
+    font-size: 14px;
+    color: blueviolet;
+}
+/* ⭐ General Rating Styles */
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 20px; /* Adjust size */
+    color: gold; /* Star color */
+    gap: 5px; /* Space between stars */
+    font-family: Arial, sans-serif;
+}
+
+/* ⭐ Adjust font color for ratings text */
+.rating-text {
+    font-size: 12px;
+    color:black; /* Change to match your theme */
+    margin-left: 8px;
+}
+
+/* ⭐ Interactive Rating (Hover Effect) */
+.rating-stars {
+    display: flex;
+    cursor: pointer;
+}
+
+.rating-stars i {
+    transition: black;
+}
+
+.rating-stars i:hover,
+.rating-stars i.active {
+    color: gold;
+}
+
+
+
+.course-card .price span {
+    text-decoration: line-through;
+    color: black;
+}
+
+/* Badges */
+.sale-badge, .hot-badge {
+    position: absolute;
+    background: blue;
+    color: black;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.hot-badge {
+    background:#f1c40f;
+}
+
+/* FOOTER STYLING */
+footer {
+    background: #0B0B33;
+    color: #fff;
+    padding: 50px 10%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-section h4::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #5C5CFF;
+    margin-top: 5px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f9b234;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f9b234;
+}
+
+/* APP DOWNLOAD BUTTONS */
+.app-buttons {
+    margin-top: 15px;
+}
+
+.app-buttons a img {
+    width: 140px;
+    margin-right: 10px;
+    grid-row: row;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #f9b234;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .footer-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
