@@ -629,4 +629,157 @@ body{
   }
  .footer-description{
     font-size: 16px;}
+@media (max-width: 1024px) {
+    .navbar {
+      padding: 0 30px; 
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+    .navbar-item {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .login-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 20px; 
+    }
+  
+    .navbar-item {
+      width: 100%;
+    }
+  
+    .login-button {
+      width: 100%;
+      padding: 12px 25px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0 10px; 
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-item {
+      width: 100%;
+    }
+  
+    .login-button {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .header-info {
+      gap: 30px;
+    }
+  
+    .email-location {
+      gap: 20px;
+      font-size: 14px;
+    }
+  
+    .social {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .location-icon,
+    .email-icon,
+    .phone-icon {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .phone {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-info {
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .email-location {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .social {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .location-icon,
+    .email-icon,
+    .phone-icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .phone {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .header-info {
+      gap: 10px;
+    }
+  
+    .email-location {
+      gap: 10px;
+      font-size: 12px;
+    }
+  
+    .social-links {
+      gap: 5px;
+    }
+  
+    .location-icon,
+    .email-icon,
+    .phone-icon {
+      width: 16px;
+      height: 16px;
+    }
+  
+    
+  }
+    
   
