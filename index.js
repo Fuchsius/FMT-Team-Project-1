@@ -153,7 +153,7 @@ app.get('/event/:id', async (req, res) => {
     res.status(500).json({ message: "Error fetching event", error });
   }
 });
-
+// ghjggggghhhg
 // Update an event by ID
 app.put('/event/:id', async (req, res) => {
   try {
