@@ -78,5 +78,63 @@
         "instructor_id": "I010",
         "price": 220,
         "created_at": "2025-02-25T19:00:00Z"
-    }
+    },
+
+
+    {
+        "event_id": "EVT001",
+        "event_name": "JavaScript Bootcamp",
+        "event_date": "2025-03-15"
+      },
+      {
+        "event_id": "EVT002",
+        "event_name": "Python for Data Science Workshop",
+        "event_date": "2025-04-10"
+      },
+      {
+        "event_id": "EVT003",
+        "event_name": "ReactJS Hackathon",
+        "event_date": "2025-05-05"
+      },
+      {
+        "event_id": "EVT004",
+        "event_name": "Backend Development with Node.js",
+        "event_date": "2025-06-20"
+      },
+      {
+        "event_id": "EVT005",
+        "event_name": "Machine Learning Conference",
+        "event_date": "2025-07-08"
+      },
+      {
+        "event_id": "EVT006",
+        "event_name": "Cybersecurity Essentials Seminar",
+        "event_date": "2025-08-12"
+      },
+      {
+        "event_id": "EVT007",
+        "event_name": "Full Stack Development Meetup",
+        "event_date": "2025-09-18"
+      },
+      {
+        "event_id": "EVT008",
+        "event_name": "AI & Robotics Symposium",
+        "event_date": "2025-10-25"
+      },
+      {
+        "event_id": "EVT009",
+        "event_name": "Blockchain Development Summit",
+        "event_date": "2025-11-30"
+      },
+      {
+        "event_id": "EVT010",
+        "event_name": "DevOps & Cloud Computing Workshop",
+        "event_date": "2025-12-15"
+      }
+
+
+
+
+
+    
 ]
