@@ -120,7 +120,11 @@ app.put('/course/:id', async (req, res) => {
     res.send(result);
   })
 
- 
+ // GET ALL USERS
+ app.get('/users', async (req, res) => {
+  const users = await userCollection.find({}).toArray();
+  res.send(users);
+})
 
 // Root route
 app.get('/', (req, res) => {
