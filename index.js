@@ -96,8 +96,6 @@ app.put('/course/:id', async (req, res) => {
     }
   }); 
 
-
-
   //delete course by id
   app.delete('/course/:id', async (req, res) => {
     try {
@@ -115,7 +113,14 @@ app.put('/course/:id', async (req, res) => {
   });
 
   // add new user
-  // Route to add a new user
+  app.post('/new-user', async (req, res) => {
+    const newUser = req.body;
+
+    const result = await userCollection.insertOne(newUser);
+    res.send(result);
+  })
+
+ 
 
 // Root route
 app.get('/', (req, res) => {
