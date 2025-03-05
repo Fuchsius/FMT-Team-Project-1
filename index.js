@@ -4,14 +4,14 @@ require('dotenv').config();
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // MongoDB connection URI
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@skillgrow.auylm.mongodb.net/?retryWrites=true&w=majority&appName=skillgrow`;
+const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@skillgrow.auylm.mongodb.net/?retryWrites=true&w=majority&appName=skillgrow`;
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -32,7 +32,7 @@ async function connectDB() {
 }
 connectDB(); // Call the function to establish a connection
 
-// Database Collections
+// Database Collections 
 const database = client.db("skill-growdb");
 const userCollection = database.collection("user");
 const courseCollection = database.collection("course");
@@ -99,7 +99,6 @@ app.put('/course/:id', async (req, res) => {
 
 
   //delete course by id
-
   app.delete('/course/:id', async (req, res) => {
     try {
       const id = req.params.id;
