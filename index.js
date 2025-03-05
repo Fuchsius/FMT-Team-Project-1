@@ -118,13 +118,20 @@ app.put('/course/:id', async (req, res) => {
 
     const result = await userCollection.insertOne(newUser);
     res.send(result);
-  })
+  });
 
  // GET ALL USERS
  app.get('/users', async (req, res) => {
   const users = await userCollection.find({}).toArray();
   res.send(users);
-})
+});
+
+// GET USER BY ID
+app.get('/user/:id', async (req, res) => {
+  const id = req.params.id;
+  const user = await userCollection.findOne({ _id: new ObjectId(id) });
+  res.send(user);
+});
 
 // Root route
 app.get('/', (req, res) => {
