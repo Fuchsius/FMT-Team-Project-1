@@ -115,6 +115,7 @@ app.put('/course/:id', async (req, res) => {
   });
 
   // add new user
+  // Route to add a new user
 
 // Root route
 app.get('/', (req, res) => {
