@@ -1,7 +1,13 @@
-const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
-const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+require("dotenv").config();
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
+
+
+
+const enrollmentRoutes = require("./routes/enrollmentRoutes");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,7 +17,9 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection URI
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@skillgrow.auylm.mongodb.net/?retryWrites=true&w=majority&appName=skillgrow`;
+
+const uri = "mongodb+srv://chamanthikaranaweera:@skillgrow.auylm.mongodb.net/?retryWrites=true&w=majority&appName=skillgrow";
+
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -40,80 +48,63 @@ const eventCollection = database.collection("event");
 const bookCollection = database.collection("book");
 const enrollmentCollection = database.collection("enrollment");
 
-// Route to add a new course
-app.post('/new-course', async (req, res) => {
+
+// Enroll a student
+exports.enrollStudent = async (req, res) => {
   try {
-    const newCourse = req.body;
-    const result = await courseCollection.insertOne(newCourse);
-    res.status(201).json(result);
+    const { studentID, courseID } = req.body;
+    const newEnrollment = new Enrollment({ studentID, courseID });
+    await newEnrollment.save();
+    res.status(201).json({ message: "Enrollment successful!", enrollment: newEnrollment });
   } catch (error) {
-    res.status(500).json({ message: "Error adding course", error });
+    res.status(500).json({ message: "Error enrolling student", error });
   }
-});
+};
 
-// Get all courses
-app.get('/courses', async (req, res) => {
+// Get all enrollments
+exports.getAllEnrollments = async (req, res) => {
   try {
-    const result = await courseCollection.find().toArray();
-    res.json(result);
+    const enrollments = await Enrollment.find();
+    res.status(200).json(enrollments);
   } catch (error) {
-    res.status(500).json({ message: "Error fetching courses", error });
+    res.status(500).json({ message: "Error retrieving enrollments", error });
   }
-});
+};
 
-// Get a specific course by ID
-app.get('/course/:id', async (req, res) => {
+// Get enrollment by ID
+exports.getEnrollmentById = async (req, res) => {
   try {
-    const id = req.params.id;
-    const result = await courseCollection.findOne({ _id: new ObjectId(id) });
-    if (!result) {
-      return res.status(404).json({ message: "Course not found" });
-    }
-    res.json(result);
+    const enrollment = await Enrollment.findById(req.params.id);
+    if (!enrollment) return res.status(404).json({ message: "Enrollment not found" });
+    res.status(200).json(enrollment);
   } catch (error) {
-    res.status(500).json({ message: "Error fetching course", error });
+    res.status(500).json({ message: "Error fetching enrollment", error });
   }
-});
+};
 
-// update course by id
-app.put('/course/:id', async (req, res) => {
-    try {
-      const id = req.params.id;
-      const updatedCourse = req.body;
-  
-      const result = await courseCollection.updateOne(
-        { _id: new ObjectId(id) },
-        { $set: updatedCourse }
-      );
-  
-      if (result.matchedCount === 0) {
-        return res.status(404).json({ message: "Course not found" });
-      }
-  
-      res.json({ message: "Course updated successfully", result });
-    } catch (error) {
-      res.status(500).json({ message: "Error updating course", error });
-    }
-  }); 
+// Update enrollment status
+exports.updateEnrollmentStatus = async (req, res) => {
+  try {
+    const { status } = req.body;
+    const updatedEnrollment = await Enrollment.findByIdAndUpdate(req.params.id, { status }, { new: true });
+    if (!updatedEnrollment) return res.status(404).json({ message: "Enrollment not found" });
+    res.status(200).json({ message: "Enrollment updated!", enrollment: updatedEnrollment });
+  } catch (error) {
+    res.status(500).json({ message: "Error updating enrollment", error });
+  }
+};
 
+// Delete an enrollment
+exports.deleteEnrollment = async (req, res) => {
+  try {
+    const deletedEnrollment = await Enrollment.findByIdAndDelete(req.params.id);
+    if (!deletedEnrollment) return res.status(404).json({ message: "Enrollment not found" });
+    res.status(200).json({ message: "Enrollment deleted successfully!" });
+  } catch (error) {
+    res.status(500).json({ message: "Error deleting enrollment", error });
+  }
+};
 
-
-  //delete course by id
-
-  app.delete('/course/:id', async (req, res) => {
-    try {
-      const id = req.params.id;
-      const result = await courseCollection.deleteOne({ _id: new ObjectId(id) });
-  
-      if (result.deletedCount === 0) {
-        return res.status(404).json({ message: "Course not found" });
-      }
-  
-      res.json({ message: "Course deleted successfully" });
-    } catch (error) {
-      res.status(500).json({ message: "Error deleting course", error });
-    }
-  });
 
 // Root route
 app.get('/', (req, res) => {

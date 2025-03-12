@@ -1,11 +1,10 @@
+
 const mongoose = require("mongoose");
 
-const enrollmentSchema = new mongoose.Schema({
-  studentID: { type: mongoose.Schema.Types.ObjectId, ref: "Student", required: true },
-  courseID: { type: mongoose.Schema.Types.ObjectId, ref: "Course", required: true },
-  enrollmentDate: { type: Date, default: Date.now },
-  status: { type: String, enum: ["Active", "Completed", "Dropped"], default: "Active" }
+const EnrollmentSchema = new mongoose.Schema({
+  studentID: { type: String, required: true },
+  courseID: { type: String, required: true },
+  status: { type: String, default: "pending" }, // Default status
 });
 
-const Enrollment = mongoose.model("Enrollment", enrollmentSchema);
-module.exports = Enrollment;
+module.exports = mongoose.model("Enrollment", EnrollmentSchema);
