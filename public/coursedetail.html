@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses</title>
+    <link rel="stylesheet" href="coursedetail.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>All Courses</h1>
+        <p>Home > Courses</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><input type="checkbox"> Art & Design (8)</li>
+                <li><input type="checkbox"> Business (12)</li>
+                <li><input type="checkbox"> Data Science (7)</li>
+                <li><input type="checkbox"> Development (10)</li>
+                <li><input type="checkbox"> Finance (8)</li>
+                <li><input type="checkbox"> Health & Fitness (8)</li>
+                <li><a href="#">Show More ▼</a></li>
+            </ul>
+
+            <h3>Language</h3>
+            <ul>
+                <li><input type="checkbox"> All Language</li>
+                <li><input type="checkbox"> Arabic (11)</li>
+                <li><input type="checkbox"> English (53)</li>
+                <li><input type="checkbox"> Spanish (22)</li>
+                <li><a href="#">Show More ▼</a></li>
+            </ul>
+
+            <h3>Price</h3>
+            <ul>
+                <li><input type="checkbox"> All Price</li>
+                <li><input type="checkbox"> Free</li>
+                <li><input type="checkbox"> Paid</li>
+            </ul>
+
+            <h3>Skill Level</h3>
+            <ul>
+                <li><input type="checkbox"> All Skills</li>
+                <li><input type="checkbox"> Beginner (55)</li>
+                <li><input type="checkbox"> Intermediate (22)</li>
+                <li><input type="checkbox"> High (42)</li>
+            </ul>
+
+            <h3>Instructors</h3>
+            <ul>
+                <li><input type="checkbox"> David Millar (10)</li>
+                <li><input type="checkbox"> Wade Warren (13)</li>
+                <li><input type="checkbox"> Jenny Wilson (22)</li>
+                <li><input type="checkbox"> Jacob Jones (42)</li>
+                <li><a href="#">Show More ▼</a></li>
+            </ul>
+
+            <h3>Ratings</h3>
+            <ul>
+                <li><input type="checkbox"> ⭐⭐⭐⭐⭐ (42)</li>
+                <li><input type="checkbox"> ⭐⭐⭐⭐☆ (31)</li>
+                <li><input type="checkbox"> ⭐⭐⭐☆☆ (17)</li>
+                <li><input type="checkbox"> ⭐⭐☆☆☆ (3)</li>
+            </ul>
+        </aside>
+
+        <main class="course-content" style="justify-content: center;">
+          <div class="main-content" style="margin-top:20px">
+            <div id="courses-list"></div>
+          </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="logo.png" alt="SkillGro Logo" class="footer-logo">
+                <p>when an unknown printer took galley of type and scrambled it to make pspcimen bookt has.</p>
+                <p>463 7th Ave, NY 10018, USA</p>
+                <p>+123 88 9900 456</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Our values</a></li>
+                    <li><a href="#">Our advisory board</a></li>
+                    <li><a href="#">Our partners</a></li>
+                    <li><a href="#">Become a partner</a></li>
+                    <li><a href="#">Work at Future Learn</a></li>
+                    <li><a href="#">Quizlet Plus</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Our Company</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Become Teacher</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Instructor</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <p>when an unknown printer took galley type and scrambled</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="app-buttons">
+                    <a href="#" class="google-play"><img src="google-play.png" alt="Google Play"></a>
+                    <a href="#" class="apple-store"><img src="apple-store.png" alt="Apple Store"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2010-2024 skillgro.com. All rights reserved.</p>
+            <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    
+
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('http://localhost:6610/api/courses')
+    .then(res => {
+      if (!res.ok) throw new Error('Network response was not ok: ' + res.status);
+      return res.json();
+    })
+    .then(courses => {
+      const list = document.getElementById('courses-list');
+      list.innerHTML = '';
+      if (!Array.isArray(courses) || courses.length === 0) {
+        list.innerHTML = '<p>No courses found.</p>';
+        return;
+      }
+      courses.forEach(course => {
+        const card = document.createElement('div');
+        card.className = 'course-card';
+        card.innerHTML = `
+          <img class="course-image" src="${course.image ? 'assests/' + course.image : 'assests/img1.png'}" alt="Course Image">
+          <div class="course-meta">
+            <span class="course-category">${course.category || ''}</span>
+            <span class="course-rating">${course.rating ? `(${course.rating} Reviews)` : ''}</span>
+          </div>
+          <h2 class="course-title">${course.title || 'No Title'}</h2>
+          <p class="course-description">${course.description || 'No description available.'}</p>
+          <p><strong>Instructor:</strong> <span class="instructor-id">${course.instructor_id || ''}</span></p>
+          <p><strong>Created At:</strong> <span class="created-at">${course.created_at ? new Date(course.created_at).toLocaleDateString() : ''}</span></p>
+          <p><strong>Price:</strong> <span class="current-price">${course.price ? `$${course.price}` : 'N/A'}</span></p>
+        `;
+        list.appendChild(card);
+      });
+    })
+    .catch(err => {
+      document.getElementById('courses-list').innerHTML = `<p>Failed to load courses: ${err}</p>`;
+    });
+});
+</script>
+</html>
